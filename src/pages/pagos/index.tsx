@@ -1,0 +1,42 @@
+import React, { NextPage } from 'next'
+import { ApplicationWrapper } from '../../components/layout/ApplicationWrapper';
+
+interface TProps {
+  response: string;
+}
+
+const Pagos: NextPage<TProps> = ({response}) => {
+  return (
+  <ApplicationWrapper title='Pagos' description='bienvenido al Pagos'>
+    <h1 className="text-3xl font-bold underline text-center ">Pagos</h1>
+    <table className="table-fixed">
+  <thead>
+    <tr>
+      <th>Song</th>
+      <th>Artist</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
+      <td>Malcolm Lockyer</td>
+      <td>1961</td>
+    </tr>
+    <tr>
+      <td>Witchy Woman</td>
+      <td>The Eagles</td>
+      <td>1972</td>
+    </tr>
+    <tr>
+      <td>Shining Star</td>
+      <td>Earth, Wind, and Fire</td>
+      <td>1975</td>
+    </tr>
+  </tbody>
+</table>
+  </ApplicationWrapper>
+  );
+};
+
+export default Pagos;
