@@ -21,6 +21,7 @@ export const ApplicationWrapper: FC<PropsWithChildren<TProps>> = ({ title, descr
     <nav className='w-full flex gap-5 p-6 items-center text-2xl'>
     <Link href='/'>Home </Link>
         <Link href='/resumen'>Resumen </Link>
+        <Link href='/usuarios'>Usuarios </Link>
         <Link href='/pagos'>Pagos </Link>
         <Link href='/gastos'>Gastos </Link>
         <Link href='/cobros'>Cobros </Link>
